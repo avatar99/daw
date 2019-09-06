@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "%"
-var adminprefix = "%"
+var prefix = "p"
+var adminprefix = "p"
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("$obc")) {
+    if (message.content.startsWith("pbc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -27,7 +27,7 @@ client.on("message", message => {
 
   client.on("message", message => {
   
-              if (message.content.startsWith(prefix + "bc")) {
+              if (message.content.startsWith(prefix + "bc1dw")) {
                            if (!message.member.hasPermission("ADMINISTRATOR"))  return;
     let args = message.content.split(" ").slice(1);
     var argresult = args.join(' '); 
